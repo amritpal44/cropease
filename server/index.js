@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const mlRoutes = require("./routes/mlRoutes");
+
 const cors = require('cors')
 
 require('dotenv').config()
@@ -14,11 +16,12 @@ app.listen(PORT, () => {
 
 app.use(express.json())
 
-app.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true
-}))
+// app.use(cors({
+//     origin: "http://localhost:3000",
+//     credentials: true
+// }))
 
+app.use("/api/v1/ml", mlRoutes);
 
 //home route
 app.get("/", (req, res) => {
