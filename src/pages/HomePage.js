@@ -35,7 +35,7 @@ const HomePage = () => {
 
 
   return (
-    <div className='relative '>
+    <div className='relative pt-16'>
 
       {/* SECTION 1 */}
       {/* asix -z-10 karne se buttons kam nahi karege */}

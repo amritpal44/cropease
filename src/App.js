@@ -5,10 +5,11 @@ import HomePage from './pages/HomePage';
 import Navbar from './components/Navbar';
 import FuturePrediction from './pages/FuturePrediction';
 import CurrentPrediction from './pages/CurrentPrediction';
+import SupervisedOutput from './pages/SupervisedOutput';
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-screen relative">
       <Navbar/>
       <Routes>
         <Route path="/" element = {<HomePage/>} />
@@ -16,7 +17,9 @@ function App() {
         <Route path='/future-prediction' element = {<FuturePrediction/>} />
 
         <Route path='/current-prediction' element = {<CurrentPrediction/> } />
-      </Routes>
+
+        <Route path='/current-output' element = {<SupervisedOutput/>} />
+      </Routes> 
     </div>
   );
 }

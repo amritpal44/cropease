@@ -16,7 +16,7 @@ const Navbar = () => {
 
 
   return (
-    <div id='#navbar' className='z-20 bg-slate-950 font-clarity-city flex justify-between md:justify-evenly px-0 p-1 sm:p-2 md:px-7 sm:px-3'>
+    <div id='#navbar' className='z-20 absolute w-full bg-slate-950 font-clarity-city flex justify-between md:justify-evenly px-0 p-1 sm:p-2 md:px-7 sm:px-3'>
       
       <Link to={"/"}>
         <div className='flex  justify-center text-slate-200 text-2xl sm:text-3xl md:text-4xl gap-1 p-3'>
