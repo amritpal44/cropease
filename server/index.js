@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 
 const mlRoutes = require("./routes/mlRoutes");
+const contactRoutes = require("./routes/contactRoutes")
 
 const cors = require('cors')
 
@@ -22,6 +23,7 @@ app.use(cors({
 }))
 
 app.use("/api/v1/ml", mlRoutes);
+app.use("/api/v1/contact", contactRoutes);
 
 //home route
 app.get("/", (req, res) => {

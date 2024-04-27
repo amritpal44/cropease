@@ -2,15 +2,6 @@ import React from 'react'
 import logo from "../assests/logo/cropease_logo.png"
 import { Link } from 'react-router-dom'
 import { NavbarLinks } from '../data/navbar-links'
-// import { useSelector } from 'react-redux'
-
-// import { ACCOUNT_TYPE } from '../../utils/constants'
-
-// import {AiOutlineShoppingCart} from "react-icons/ai"
-// import { FaBell } from "react-icons/fa";
-
-// import ProfileDropdown from '../Core/Auth/ProfileDropdown'
-// import { ScrollLink } from 'react-scroll'
 
 const Navbar = () => {
 
@@ -28,7 +19,7 @@ const Navbar = () => {
 
 
       {/* LINKS */}
-      <div className='hidden md:flex gap-8 text-slate-200 text-xl items-center'> 
+      <div className='md:flex gap-8 text-slate-200 text-xl items-center'> 
         {
           NavbarLinks.map( (link, index) => (
             <Link to={link?.path} key={index}>

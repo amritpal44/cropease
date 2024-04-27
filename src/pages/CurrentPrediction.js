@@ -186,7 +186,7 @@ const CurrentPrediction = () => {
                             type="number"
                             name="humidity"
                             id="humidity"
-                            placeholder="Enter Humidity value of soil"
+                            placeholder="Enter Humidity"
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                             {...register("humidity", { required: true })}
                             />
@@ -219,7 +219,7 @@ const CurrentPrediction = () => {
                             type="number"
                             name="rainfall"
                             id="rainfall"
-                            placeholder="Enter rainfall value of your area."
+                            placeholder="Enter annual rainfall value of your area in mm."
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                             {...register("rainfall", { required: true })}
                         />

@@ -65,13 +65,13 @@ const HomePage = () => {
           {/* TWO BUTTONS */}
           <div className={`flex md:flex-row flex-col gap-5 justify-around pt-10 text-slate-200 text-[18px] font-bold ${hiddenClass} ${Delay2} m-6`}>
 
-            <PrimaryButton linkto={"/current-prediction"}>
-              Current Projection
-            </PrimaryButton>
-        
-            <SecondaryButton linkto={"/future-prediction"}>
-              Future Projection
+            <SecondaryButton linkto={"/current-prediction"}>
+              Predict Your Crop
             </SecondaryButton>
+        
+            {/* <SecondaryButton linkto={"/future-prediction"}>
+              Future Projection
+            </SecondaryButton> */}
 
           </div>
         </div>

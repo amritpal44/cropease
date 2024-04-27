@@ -3,3 +3,7 @@
 export const predictionendpoint = {
     CURRENT_PREDICTOIN_API: "http://localhost:4000/api/v1/ml/supervisedPrediction"
 }
+
+export const contactusEndpoint = {
+    CONTACT_US_API: "http://localhost:4000/api/v1/contact/contact-us/"
+}
