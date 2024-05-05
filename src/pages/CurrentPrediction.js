@@ -98,10 +98,10 @@ const CurrentPrediction = () => {
 
   return (
 
-    <div id='contactus' className='mx-auto w-full h-full bg-[#0d192b] px-[20px] font-clarity-city pt-10'>
+    <div id='contactus' className='mx-auto w-full min-h-screen bg-[#0d192b] px-[20px] font-clarity-city pt-10'>
         <div className='max-w-7xl mx-7 flex justify-center flex-col lg:flex-row lg:mx-auto gap-5 sm: pt-20'>
             <div className= {`${hiddenClass} ${Delay1} mt-14 flex flex-col lg:w-2/6`}>
-                <h1 className='text-blue-500 font-bold text-[28px]'>Current Prediction</h1>
+                <h1 className='text-blue-500 font-bold text-[28px]'>Crop Prediction</h1>
                 <p className=' text-[25px] lg:text-[50px] font-semibold leading-tight text-slate-200 mt-8'>Predict your crop</p>
                 <p className='text-slate-500 mt-5 text-[18px]'>
                     Get real-time crop insights with our current prediction feature. Using cutting-edge algorithms, we analyze temperature data for accurate yield forecasts. 
@@ -116,24 +116,25 @@ const CurrentPrediction = () => {
                         <div className="flex flex-col gap-2 lg:w-[48%]">
                             <input
                             type="number"
-                            name="K"
-                            id="K"
-                            placeholder="Enter Potassium value of soil"
+                            name="N"
+                            id="N"
+                            placeholder="Nitrogen(N) content in ppm"
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
-                            {...register("K", { required: true })}
+                            {...register("N", { required: true })}
                             />
-                            {errors.K && (
+                            {errors.N && (
                             <span className="-mt-1 text-[12px] text-yellow-100">
-                                Please Enter Potassium value.
+                                Please Enter Nitrogen value.
                             </span>
                             )}
                         </div>
+                        
                         <div className="flex flex-col gap-2 lg:w-[48%]">
                             <input
                             type="number"
                             name="P"
                             id="P"
-                            placeholder="Enter Phosphorus value of soil"
+                            placeholder="Phosphorus(P) content in ppm"
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                             {...register("P", {required: true})}
                             />
@@ -147,27 +148,29 @@ const CurrentPrediction = () => {
 
                     {/* N & temperature */}
                     <div className="flex flex-col gap-5 lg:flex-row">
+
                         <div className="flex flex-col gap-2 lg:w-[48%]">
                             <input
                             type="number"
-                            name="N"
-                            id="N"
-                            placeholder="Enter Nitrogen value of soil"
+                            name="K"
+                            id="K"
+                            placeholder="Potassium(K) content in ppm"
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
-                            {...register("N", { required: true })}
+                            {...register("K", { required: true })}
                             />
-                            {errors.N && (
+                            {errors.K && (
                             <span className="-mt-1 text-[12px] text-yellow-100">
-                                Please Enter Nitrogen value.
+                                Please Enter Potassium value.
                             </span>
                             )}
                         </div>
+
                         <div className="flex flex-col gap-2 lg:w-[48%]">
                             <input
                             type="number"
                             name="temperature"
                             id="temperature"
-                            placeholder="Enter Temperature value of soil"
+                            placeholder="Enter Temperature in Celsius"
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                             {...register("temperature", { required: true })}
                             />
@@ -186,7 +189,7 @@ const CurrentPrediction = () => {
                             type="number"
                             name="humidity"
                             id="humidity"
-                            placeholder="Enter Humidity"
+                            placeholder="Enter Humidity in %"
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                             {...register("humidity", { required: true })}
                             />
@@ -198,7 +201,7 @@ const CurrentPrediction = () => {
                         </div>
                         <div className="flex flex-col gap-2 lg:w-[48%]">
                             <input
-                            type="number"
+                            type="float"
                             name="ph"
                             id="ph"
                             placeholder="Enter PH value of soil"
@@ -219,7 +222,7 @@ const CurrentPrediction = () => {
                             type="number"
                             name="rainfall"
                             id="rainfall"
-                            placeholder="Enter annual rainfall value of your area in mm."
+                            placeholder="Enter seasonal rainfall value of your area in mm."
                             className="form-style sm:text-xl rounded-lg  w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                             {...register("rainfall", { required: true })}
                         />

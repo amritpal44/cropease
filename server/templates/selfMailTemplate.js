@@ -74,8 +74,6 @@ exports.selfMailEnquiry = (
     
     <body>
         <div class="container">
-            <a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
-            src="https://i.ibb.co/PQbfRnf/Screenshot-2023-10-14-132711.png" alt="HealthEase Logo"></a>
             <div class="message">Enquiry Request</div>
             <div class="body">
                 <p>Dear ${firstname} ${lastname},</p>

@@ -29,7 +29,7 @@ const About = () => {
 
   return (
 
-    <div className='h-full w-full bg-[#0d192b] '>
+    <div className='min-h-screen w-full bg-[#0d192b] '>
       <div id='aboutus' className='mx-auto max-w-7xl text-slate-200  py-10 sm:py-32 rounded-[4rem] flex flex-col sm:flex-row justify-center items-center font-clarity-city gap-4 sm:gap-36 '>
         <div className={`${hiddenClass} ${Delay2} w-full sm:w-[80rem] h-[300px] sm:h-auto overflow-hidden`}>
           <img src={whychooseus} alt='Farmers' className='w-full h-full object-cover  rounded-lg' />

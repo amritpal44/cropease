@@ -1,7 +1,7 @@
 //import homebuildings2 from "../assests/images/istockphoto-1289383957-170667a.webp"
 // import './HomePage.css'
 import { useEffect } from 'react'
-import PrimaryButton from '../components/PrimaryButton'
+// import PrimaryButton from '../components/PrimaryButton'
 import SecondaryButton from '../components/SecondaryButton'
 
 import cropeasebackground from "../assests/images/cropease-background.jpg"
@@ -39,10 +39,10 @@ const HomePage = () => {
 
       {/* SECTION 1 */}
       {/* asix -z-10 karne se buttons kam nahi karege */}
-      <div className='relative flex flex-wrap flex-col w-full justify-center items-center mb-24'> 
+      <div className='relative flex flex-wrap flex-col w-full justify-center items-center pb-44 ' > 
 
-        <img className="absolute  w-full object-cover rounded-xl sm:rounded-[4rem] -z-10  top-0 -translate-y-28" src={cropeasebackground} alt='home page background'/>
-
+        <img className="absolute  w-full h-full object-cover rounded-xl sm:rounded-[4rem] -z-10  top-0 -translate-y-28" src={cropeasebackground} alt='home page background'/>
+        
         {/* WELCOME DIV */}
         <div className={`mt-20 md:mt-24 w-full sm:w-[35rem] flex flex-col my-5 `}>
 
@@ -81,7 +81,7 @@ const HomePage = () => {
 
 
       {/* SECTION 3 WHY CHOOSE US */}
-      <div className='m-9 xl:m-auto max-w-7xl py-10 sm:py-[40px] sm:pt-32 rounded-[4rem] flex p-3 flex-col lg:flex-row justify-center items-center font-clarity-city gap-4 lg:gap-28 mt-8'>
+      <div className='m-9 xl:m-auto max-w-7xl py-10 sm:py-[40px] pt-0 sm:pt-2 rounded-[4rem] flex p-3 flex-col lg:flex-row justify-center items-center font-clarity-city gap-4 lg:gap-28'>
 
         <div className={`${hiddenClass} ${Delay1} text-[16px] sm:text-[18px] font-medium lg:w-1/2`}>
           <h1 className='text-blue-500 font-bold text-[24px] sm:text-[28px]'>WHY CHOOSE US</h1>

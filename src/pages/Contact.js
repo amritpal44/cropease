@@ -79,7 +79,7 @@ const Contact = () => {
 
   return (
 
-    <div id='contactus' className='mx-auto w-full h-full bg-[#0d192b] px-[20px] font-clarity-city pt-20'>
+    <div id='contactus' className='mx-auto w-full min-h-screen bg-[#0d192b] px-[20px] font-clarity-city pt-20'>
       <div className='max-w-7xl mx-7 flex flex-col lg:flex-row lg:mx-auto gap-5'>
         <div className= {`${hiddenClass} ${Delay1} mt-14 flex flex-col lg:w-4/6`}>
           <h1 className='text-blue-500 font-bold text-[28px]'>CONTACT US</h1>
@@ -165,7 +165,7 @@ const Contact = () => {
                 type="number"
                 name="phonenumber"
                 id="phonenumber"
-                placeholder="12345 67890"
+                placeholder="Contact Number"
                 className="form-style sm:text-xl rounded-lg w-full px-3 lg:px-[18px] py-[10px] lg:py-[12px] bg-slate-100"
                 {...register("phoneNo", {
                   required: {
