@@ -1,9 +1,9 @@
-// const BASE_URL = process.env.REACT_APP_BASE_URL
+const BASE_URL = process.env.REACT_APP_BASE_URL
 
 export const predictionendpoint = {
-    CURRENT_PREDICTOIN_API: "http://localhost:4000/api/v1/ml/supervisedPrediction"
+    CURRENT_PREDICTOIN_API: BASE_URL + "/ml/supervisedPrediction"
 }
 
 export const contactusEndpoint = {
-    CONTACT_US_API: "http://localhost:4000/api/v1/contact/contact-us/"
+    CONTACT_US_API: BASE_URL + "/contact/contact-us"
 }
