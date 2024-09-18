@@ -13,7 +13,7 @@ exports.supervisedPrediction = async(req, res) => {
             })
         }
 
-        const pythonScriptPath = 'D:/YMCA/3rd year/6th semester/Project/cropease/server/pythonScript/supervised.py';
+        const pythonScriptPath = './pythonScript/supervised.py';
         //const childPython = spawn('python', [pythonScriptPath]);
         const childPython =  spawn('python', [pythonScriptPath, N, P, K, temperature, humidity, ph, rainfall]);
         

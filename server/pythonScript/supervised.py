@@ -6,7 +6,6 @@ import os
 # model = joblib.load('D:\\YMCA\\3rd year\\6th semester\\Project\\cropease\\server\\models\\model.pkl')
 
 model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'model.pkl')
-
 model = joblib.load(model_path)
 
 def recommendation(N, P, K, temperature, humidity, ph, rainfall):
